@@ -44,18 +44,19 @@ color: var(--green-color);
 body{
   background-image: url(/img/back.jpg);
   background-repeat: repeat;
-  height: 1500px;
+  height: 1200px;
 }
 #foot{
   background-color: #19283f;
+
   color:var(--mywhite-color);
   padding: 20px;
   text-align: center;
   border: 30px 30px 0 0 ;
   position:relative;
   top: 100%;
-}
 
+}
 
 .landing{
   background-color: var(--dark-color);
@@ -63,3 +64,56 @@ body{
   color: var(--mywhite-color);
  
 }
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+footer{
+  background-color: var(--dark-color);
+}
+.footerContainer{
+  width: 100%;
+  padding: 0px 10px 20px ;
+  position:relative;
+  top: 100%;
+}
+.socialIcons{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.socialIcons a{
+  text-decoration: none;
+  padding:  10px;
+  background-color: var(--mywhite-color);
+  margin: 10px;
+  border-radius: 30%;
+ 
+}
+.socialIcons a i{
+  font-size: 2em;
+  color: black;
+  opacity: 0,9;
+ 
+}
+
+
+
+
+.footerBottom{
+  background-color:var(--mywhite-color);
+  padding: 20px;
+  text-align: center;
+}
+.footerBottom p{
+  color: rgb(12, 11, 11);
+}
+
+  .socialIcons a{
+      padding: 20px;
+      margin: 30px;
+  }
