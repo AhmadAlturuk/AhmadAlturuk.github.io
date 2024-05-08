@@ -205,28 +205,29 @@ footer{
   display: block !important;
 }
 /**********************************/
-ul {
+ol {
   list-style-type:none;
   padding: 0;
   margin: 0;
  
 }
 
-ul li {
+ol li {
   background-color: #faeeee;
   padding: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   border-radius: 10px;
  
 }
 
-ul li:nth-child(even) {
+ol li:nth-child(even) {
   background-color: #faeeee;
   
 }
 
-ul li:before {
-
+ol li:before {
+  list-style-type:none;
+  counter-increment: li;
   margin-right: 5px;
   font-weight: bold;
  
