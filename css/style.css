@@ -43,7 +43,7 @@ color: var(--green-color);
 }
 body{
  /* background-image: url(/img/back.jpg);*/
- background-color: #F0B7A4;
+ background-color: var(--mywhite-color);
   background-repeat: repeat;
   height: 400px;
 }
@@ -125,7 +125,9 @@ footer{
   #5ra {
     background-size: contain;
   }
-
+  .carousel-caption h1 {
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  }
   hr {
     display: block;
     margin-block-start: 0.5em;
