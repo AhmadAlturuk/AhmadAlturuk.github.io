@@ -42,7 +42,8 @@ color: var(--green-color);
   
 }
 body{
-  background-image: url(/img/back.jpg);
+ /* background-image: url(/img/back.jpg);*/
+ background-color: #F0B7A4;
   background-repeat: repeat;
   height: 400px;
 }
