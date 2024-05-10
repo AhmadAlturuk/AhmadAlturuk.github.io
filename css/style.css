@@ -305,3 +305,70 @@ body {
   height: auto; 
   border-radius: 4px;
 }
+/**************cv**********************/
+.aside1{
+  text-align-last: right;
+}
+
+
+
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section1 {
+  margin-bottom: 30px;
+}
+
+.section1 h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.section1 ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.section1 li {
+  margin-bottom: 10px;
+}
+
+.section1 h3 {
+  margin-top: 0;
+  color: #666;
+}
+
+.article1 {
+  margin-bottom: 30px;
+}
+
+.article1 h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.article1 ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.article1 li {
+  margin-bottom: 10px;
+}
+
+.article1 h3 {
+  margin-top: 0;
+  color: #666;
+}
+
+.row-1cv{
+  border-style: solid;
+   border-width: 2px;
+    border-radius: 12px;
+     padding: 12px;
+      background-color: rgba(255, 0, 0, 0.1);
+}
+
