@@ -6,7 +6,7 @@
 .my-image img{
   border-style: solid;
   border-width: 2px;
-  border-radius: 50%;
+  border-radius: 48%;
   height: 180px;
 }
 :root{
@@ -80,10 +80,10 @@ footer{
 
 .socialIcons a{
   text-decoration: none;
-  padding:  5px;
+  padding:  15px;
   background-color: var(--mywhite-color);
-  margin: 5px;
-  border-radius: 30%;
+  margin: 6px;
+  border-radius:30%;
  
 }
 .socialIcons a i{
@@ -122,12 +122,14 @@ footer{
   /* Declare heights because of positioning of img element */
   .carousel-item {
     height: 32rem;}
+
   #5ra {
     background-size: contain;
   }
   .carousel-caption h1 {
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   }
+
   hr {
     display: block;
     margin-block-start: 0.5em;
@@ -204,7 +206,7 @@ footer{
 .bd-mode-toggle .dropdown-menu .active .bi {
   display: block !important;
 }
-/**********************************/
+/************** takimiz sayfası********************/
 ol {
   list-style-type:none;
   padding: 0;
@@ -283,4 +285,23 @@ body {
   border-radius: 8px;
 }
 
+/************ Home *****************/
+.containerorta {
+  display: flex;
+  justify-content: center;
+}
 
+.card-wrapper {
+  display: flex;
+}
+
+.card {
+  width: 18rem;
+  margin-right: 15px;
+}
+
+.fotohobi {
+  max-width: 100px; 
+  height: auto; 
+  border-radius: 4px;
+}
