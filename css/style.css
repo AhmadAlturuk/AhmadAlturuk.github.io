@@ -305,13 +305,9 @@ body {
   max-width: 100px; 
   height: auto; 
   border-radius: 4px;
+ 
 }
 /**************cv**********************/
-.aside1{
-  text-align-last: right;
-}
-
-
 
 .main {
   max-width: 800px;
@@ -319,50 +315,25 @@ body {
   padding: 20px;
 }
 
-.section1 {
-  margin-bottom: 30px;
-}
 
-.section1 h2 {
+#cvcont h2 {
   margin-top: 0;
   color: #333;
 }
 
-.section1 ul {
+#cvcont ul {
   list-style-type: none;
   padding-left: 0;
 }
 
-.section1 li {
+#cvcontli {
   margin-bottom: 10px;
 }
 
-.section1 h3 {
+#cvcont h3 {
   margin-top: 0;
   color: #666;
-}
 
-.article1 {
-  margin-bottom: 30px;
-}
-
-.article1 h2 {
-  margin-top: 0;
-  color: #333;
-}
-
-.article1 ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.article1 li {
-  margin-bottom: 10px;
-}
-
-.article1 h3 {
-  margin-top: 0;
-  color: #666;
 }
 
 .row-1cv{
@@ -373,3 +344,4 @@ body {
       background-color: rgba(255, 0, 0, 0.1);
 }
 
+/*********************************************************/
