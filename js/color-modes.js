@@ -1,6 +1,4 @@
-/*!
- * Color mode toggler for Bootstrap's docs (https://getbootstrap.com/)
- */
+
 
 (() => {
   'use strict'
