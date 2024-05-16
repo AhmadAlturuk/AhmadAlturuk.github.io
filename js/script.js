@@ -1,11 +1,12 @@
 
-
-const movieSearchBox = document.getElementById('movie-search-box');
-const searchList = document.getElementById('search-list');
-const resultGrid = document.getElementById('result-grid');
+const movieSearchBox = document.getElementById('movie-search-box');// Arama kutusu için bir referans alır
+const searchList = document.getElementById('search-list'); // Arama sonuçlarının listelendiği div için bir referans alır
+const resultGrid = document.getElementById('result-grid'); // Film detaylarının görüntülendiği div için bir referans alır
 
 
 async function loadMovies(searchTerm){
+    // Belirli bir arama terimi için film listesini yükler
+    // API'ye istek yapar ve sonuçları alır
     const URL = `https://omdbapi.com/?s=${searchTerm}&page=1&apikey=fc1fef96`;
     const res = await fetch(`${URL}`);
     const data = await res.json();
@@ -14,6 +15,9 @@ async function loadMovies(searchTerm){
 }
 
 function findMovies(){
+    // Kullanıcı tarafından girilen arama terimini alır ve film listesini yükler
+    
+    // Arama teriminin uzunluğunu kontrol eder ve uygun işlemleri gerçekleştirir
     let searchTerm = (movieSearchBox.value).trim();
     if(searchTerm.length > 0){
         searchList.classList.remove('hide-search-list');
@@ -24,6 +28,8 @@ function findMovies(){
 }
 
 function displayMovieList(movies){
+    // Film listesini görüntüler
+    // API'den alınan film listesini görüntüler
     searchList.innerHTML = "";
     for(let idx = 0; idx < movies.length; idx++){
         let movieListItem = document.createElement('div');
@@ -49,6 +55,9 @@ function displayMovieList(movies){
 }
 
 function loadMovieDetails(){
+    // Her bir film öğesine tıklanıldığında film detaylarını yükler
+   
+
     const searchListMovies = searchList.querySelectorAll('.search-list-item');
     searchListMovies.forEach(movie => {
         movie.addEventListener('click', async () => {
@@ -64,6 +73,8 @@ function loadMovieDetails(){
 }
 
 function displayMovieDetails(details){
+    // Film detaylarını görüntüler
+   
     resultGrid.innerHTML = `
     <div class = "movie-poster">
         <img src = "${(details.Poster != "N/A") ? details.Poster : "image_not_found.png"}" alt = "movie poster">
@@ -87,6 +98,9 @@ function displayMovieDetails(details){
 
 
 window.addEventListener('click', (event) => {
+    // Sayfa üzerinde herhangi bir yere tıklandığında arama sonuçlarını gizler
+  
+
     if(event.target.className != "form-control"){
         searchList.classList.add('hide-search-list');
     }

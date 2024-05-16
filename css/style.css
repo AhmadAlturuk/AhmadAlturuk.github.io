@@ -1,3 +1,4 @@
+/* Home sayfası */
 .my-image{
   display: flex;
   justify-content: center;
@@ -9,6 +10,38 @@
   border-radius: 48%;
   height: 180px;
 }
+
+body{
+ 
+ background-color: var(--mywhite-color);
+  background-repeat: repeat;
+  height:300px;
+}
+
+.containerorta {
+  display: flex;
+  justify-content: center;
+}
+
+.card-wrapper {
+  display: flex;
+}
+
+.card {
+  width: 16rem;
+  margin-right: 15px;
+
+}
+
+.fotohobi {
+  max-width: 100px; 
+  height: auto; 
+  border-radius: 4px;
+ 
+}
+/******************/
+
+/* Navbar */
 :root{
   --dark-color: #19283f;
   --green-color: #33d1cc;
@@ -41,14 +74,11 @@ color: var(--green-color);
   background-color:  var(--mywhite-color);
   
 }
-body{
- /* background-image: url(/img/back.jpg);*/
- background-color: var(--mywhite-color);
-  background-repeat: repeat;
-  height: 550px;
-}
+/******************/
 
 
+
+/* Landing */
 
 .landing{
   background-color: var(--dark-color);
@@ -63,6 +93,9 @@ body{
   box-sizing: border-box;
   
 }
+/******************/
+
+/* Footer */
 footer{
   background-color: var(--dark-color);
 }
@@ -110,17 +143,19 @@ footer{
       padding:5px;
       margin: 10px;
   }
+  /********************/
 
+  /* şehrim ve takımız sayfasında ki fotoğraf carouseli*/
   .carousel {
     margin-bottom: 4rem;
   }
-  /* Since positioning the image, we need to help out the caption */
+  
   .carousel-caption {
     bottom: 3rem;
     z-index: 10;
   }
   
-  /* Declare heights because of positioning of img element */
+  
   .carousel-item {
     height: 32rem;}
 
@@ -130,7 +165,10 @@ footer{
   .carousel-caption h1 {
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   }
+/********************/
 
+
+/* Bütün sayfalarda ki satır */
   hr {
     display: block;
     margin-block-start: 0.5em;
@@ -143,6 +181,7 @@ footer{
     border-width: 1px;
 }
 
+/********************/
 
 
 /*************************************************************************************************/
@@ -285,29 +324,10 @@ body {
   height: auto;
   border-radius: 8px;
 }
+/**********************************/
 
-/************ Home *****************/
-.containerorta {
-  display: flex;
-  justify-content: center;
-}
 
-.card-wrapper {
-  display: flex;
-}
 
-.card {
-  width: 16rem;
-  margin-right: 15px;
-
-}
-
-.fotohobi {
-  max-width: 100px; 
-  height: auto; 
-  border-radius: 4px;
- 
-}
 /**************cv**********************/
 
 .main {
@@ -345,7 +365,7 @@ body {
       background-color: rgba(255, 0, 0, 0.1);
 }
 
-/***************************api******************************/
+/********* api sayfası *****************/
 
 .search-container{
   
@@ -441,7 +461,7 @@ body {
   opacity: 0.6;
 }
 
-/* thumbnail */
+
 .search-list::-webkit-scrollbar{
   width: 8px;
 }
@@ -455,12 +475,12 @@ body {
   border-radius: 10px;
 }
 
-/* js related class */
+
 .hide-search-list{
   display: none;
 }
 
-/* movie result */
+
 .result-container{
   padding: 3rem 0;
 }
@@ -475,7 +495,7 @@ body {
   padding-top: 3rem;
 }
 
-/* movie info stylings */
+
 .movie-title{
   font-size: 2rem;
   color: var(--dark-color);
@@ -600,3 +620,4 @@ body {
       margin-left: 0;
   }
 }
+/************************************************/
