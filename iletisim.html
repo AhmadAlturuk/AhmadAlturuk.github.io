@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+   <link rel="stylesheet" href="/css/cover.css">
+</head>
+
+<body>
+    <section class="contact">
+        <h2>Contact Me!</h2>
+
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="full Name" id="name"
+                    class="item" autocomplete="off">
+                    <div class="error-txt">Full Name can't be blank</div>
+                </div>
+                <div class="input-field field">
+                    
+                    <input type="text" placeholder="Email Address" id="email"
+                    class="item" autocomplete="off">
+                    <div class="error-txt">Email Addres can't be blank</div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Phone Number" id="phone"
+                    class="item" autocomplete="off">
+                    <div class="error-txt">Phone Number can't be blank</div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Subject" id="subject"
+                    class="item" autocomplete="off">
+                    <div class="error-txt">Subject can't be blank</div>
+                </div>
+            </div>
+
+            <div class="textarea-field field">
+                <textarea name="" id="message" cols="30" rows="10"
+                placeholder="Your Message" class="item"
+                autocomplete="off"></textarea>
+                <div class="error-txt">Message can't be blank</div>
+            </div>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
+
+    <script src="/js/iletisim.js"></script>
+</body>
+</html>
